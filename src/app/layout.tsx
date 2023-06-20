@@ -1,7 +1,11 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
+import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] })
+import "primereact/resources/themes/lara-light-indigo/theme.css";     
+import "primereact/resources/primereact.min.css";   
+import "primeicons/primeicons.css"
+
+import { Nav } from '@/components';
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,7 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className='bg-blue-900 min-h-screen'>
+        <Nav />
+        <div className='bg-red-500'>
+          {children}
+        </div>
+      </body>
     </html>
   )
 }
