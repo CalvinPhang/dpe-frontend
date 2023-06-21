@@ -1,6 +1,6 @@
 import './globals.css';
 
-import "primereact/resources/themes/lara-light-indigo/theme.css";     
+import "primereact/resources/themes/viva-dark/theme.css";     
 import "primereact/resources/primereact.min.css";   
 import "primeicons/primeicons.css"
 
@@ -19,9 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-blue-900 min-h-screen'>
+      <body className='min-h-screen'>
         <Nav />
-        <div className='bg-red-500'>
+        <div className='bg-[#0e1315]'>
           {children}
         </div>
       </body>

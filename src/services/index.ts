@@ -5,6 +5,7 @@ export async function fetchContainers() {
 
     const response = await fetch(BASE_URL + '/api/v1/containers', {
         headers: headers,
+        next: { revalidate: 1 }
     });
 
     const result = await response.json();

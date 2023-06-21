@@ -1,6 +1,5 @@
 'use client'
 
-import React from 'react';
 import { Menubar } from 'primereact/menubar';
 
 const Nav = () => {
