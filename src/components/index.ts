@@ -1,11 +1,13 @@
-import Nav from "./Nav";
-import Sidebar from "./Sidebar";
-import ContainerTable from "./ContainerTable";
-import AddContainer from "./AddContainer";
+import MainNav from "./main-nav";
+import InventoryTable from "./inventory-table";
+import InventoryToolbar from "./inventory-container-toolbar";
+import InventoryMain from "./inventory-main";
 
 export {
-    Nav,
-    Sidebar,
-    ContainerTable,
-    AddContainer,
+
+    MainNav,
+
+    InventoryTable,
+    InventoryToolbar,
+    InventoryMain
 }

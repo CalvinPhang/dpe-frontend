@@ -4,7 +4,7 @@ import "primereact/resources/themes/viva-dark/theme.css";
 import "primereact/resources/primereact.min.css";   
 import "primeicons/primeicons.css"
 
-import { Nav } from '@/components';
+import { MainNav } from '@/components';
 
 
 export const metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className='min-h-screen'>
-        <Nav />
+        <MainNav />
         <div className='bg-[#0e1315]'>
           {children}
         </div>
