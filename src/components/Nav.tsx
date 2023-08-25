@@ -29,7 +29,7 @@ const Nav = () => {
   const start = <span className='text-xl p-5 font-bold'>DPE</span>;
 
   return (
-      <div className="card fixed w-screen">
+      <div className="card fixed w-screen z-[9999]">
           <Menubar model={items} start={start} />
       </div>
   )
