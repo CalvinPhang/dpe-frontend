@@ -1,8 +1,8 @@
-import { fetchContainerConditions, fetchContainerTypes, fetchContainers, fetchSuppliers } from '@/services';
+import { fetchContainerConditions, fetchContainerTypes, fetchInventoryContainers, fetchSuppliers } from '@/services';
 import { InventoryMain } from '@/components';
 
 export default async function Inventory() {
-    const allContainers = await fetchContainers();
+    const allContainers = await fetchInventoryContainers();
     const containerTypes = await fetchContainerTypes();
     const containerConditions = await fetchContainerConditions();
     const suppliers = await fetchSuppliers();
